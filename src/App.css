@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
+*{
+  font-family: 'Nunito', sans-serif;
+}
+header {
+  display: flex;
+  gap: 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex section {
+  flex-grow: 1;
+}
+aside{
+  padding: 10px;
+}
+aside > ul > li > a {
+  line-height: 1.8rem;
+
+}
+
+aside ul,
+ul.grid {
+  padding: 0;
+}
+
+aside ul li,
+ul.grid {
+  list-style: none;
+}
+
+ul.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 20px;
+}
+ul.grid li{
+  display: flex;
+  min-width: 300px;
+} 
+article{
+  flex: 1 0 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  box-shadow: 0 0 12px slategray;
+  border-radius: 32px;
+
+}
+article > img{
+  width: 200px;
+  height: 250px;
+}
+article > h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+article >  p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  /*max-height: 20px; 
+  word-wrap: break-word;*/
+} 
